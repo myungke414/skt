@@ -11,14 +11,28 @@ body, h1, h2, h3, h4, h5, h6, ul, li, header, section {
 }
 nav img {
     border: 1px solid green;
-    width: 100%;
-    height: 59px;
-    display: inline-block;
+    display: inline;
 }
 .nav {
+    border: 1px solid green;
+    position: relative;
+    display: inline;
+}
+.nav a {
+    border: 1px solid red;
     display: inline-block;
 }
+a:hover {
+    color: #e70034;
+}
 #section1 {
+    border: 1px solid red;
     background-image:url("../img/article1.jpg");
     /* background-size: 15%; */
+    width: 100vh;
+    height: 100vh;
+}
+
+#section2 {
+    border: 5px solid blue;
 }
