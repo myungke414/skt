@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+body, h1, h2, h3, h4, h5, h6, ul, li, header, section {
+    margin: 0;
+    box-sizing: border-box;
+}
+.inner {
+    border: 1px solid red;
+    max-width: 1280px;
+    width: 1280px;
+    height: 20px;
+}
+nav img {
+    border: 1px solid green;
+    width: 100%;
+    height: 59px;
+    display: inline-block;
+}
+.nav {
+    display: inline-block;
+}
+#section1 {
+    background-image:url("../img/article1.jpg");
+    /* background-size: 15%; */
+}
