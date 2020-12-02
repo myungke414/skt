@@ -103,15 +103,15 @@ footer div {
     right: 72px;
     display: block;
     float: right;
-    /* margin-right: 200px;
-    padding-right: 200px; */
+    /* margin-right: 200px; */
+    /* padding-right: 20px; */
     /* width: 200px; */
 }
 #img3 img{
     float: left;
     /* border: 1px solid blue; */
     margin-right: 0px;
-    /* padding-left: 10px; */
+    padding-left: 10px;
     /* position: absolute; */
     right: 0px;
     /* display: block; */

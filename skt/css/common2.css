@@ -58,12 +58,36 @@ header::after {
     display: block;
     clear: both;
 }
+#section1 {
+    /* border: 1px solid red; */
+    background-image:url("../img/article1.jpg");
+    background-repeat: no-repeat;
+    width:1440px;
+    height: 750px;
+    margin: 0 auto;
+    /* background-color: antiquewhite; */
+}
+.left {
+    position: absolute;
+    margin-top: 320px;
+    margin-left: 70px;
+    /* display: inline; */
+}
+.right {
+    position: absolute;
+    margin-top: 320px;
+    margin-left: 1340px;
+    /* display: inline; */
+}
+
+
+
 #section2 {
     /* border: 2px solid blue; */
     position: relative;
     /* border: 5px solid blue; */
     background-color: white;
-    height: 700px;
+    height: 800px;
 }
 #section2 article {
     /* border: 1px solid black; */
@@ -72,26 +96,56 @@ header::after {
     /* float:left; */
     /* margin-left: 200px; */
 }
+.arrcordion{
+    /* padding:30px; */
+}
+.arrcordion > ul{
+    padding:0;
+}
+.arrcordion > ul > li{
+    list-style:none;
+} 
+.arrcordion > ul > li > a{
+    background:#333;
+    height:70px;
+    line-height:70px;
+    display:block;
+    color:#fff;
+    padding-left:10px;
+    text-decoration:none;
+    position: relative;
+}
+.arrcordion > ul > li:hover > a{
+    background: cornflowerblue;
+}
+.arrcordion > ul > li > a:after{
+    content:"▽";
+    position: absolute;
+    right:10px;
+    transition:transform 0.5s;
+}
+.arrcordion > ul > li:hover > a:after{
+    transform:rotate(180deg)
+}
+.arrcordion > ul > li .subs{
+    height:0;
+    overflow: hidden;
+    transition: height 0.5s;
+    background: #eee;
+}
+.arrcordion > ul > li .subs > p{
+    padding:20px;
+}
+.arrcordion > ul > li:hover .subs{
+    height:200px;
+}
 #section2::after {
     content: "";
     display: block;
     clear: both;
 }
-#section2 #s2_img {
-    /* margin-left: 200px; */
-}
-#section2 #s2_img img {
-    /* position: absolute; */
-    border: 1px solid black;
-    margin-top: 30px;    
-    float: left;
-    overflow: hidden;
-    /* margin-left: 47px; */
-    margin-right: 20px;
-    box-sizing: border-box;
-    /* display: inline-block; */
-    /* z-index: 1; */
-}
+
+
 #section3 {
     /* border: 1px solid green; */
     background-color:  #f2f2f2;
@@ -177,7 +231,7 @@ header::after {
     float: left;
     padding-right: 135px;
     border-right: 1px solid black;
-   /* margin-right: 50px; */
+   /* margin-right: -50px; */
 }
 #section5 #float2{
     float: left;

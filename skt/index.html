@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
     <link rel="stylesheet" href="css/common.css" type="text/css" />
     <title>T-world</title>
 </head>
@@ -28,27 +35,39 @@
     </header>
     
     <section id="section1">
-    <article>
-        <img src="img/left.png" class="left">
-        <img src="img/right.png" class="right">
-    </article>
+
+        <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper-container">
+
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><a href="#"><img src="img/article1.jpg"></div>
+                <div class="swiper-slide"><a href="#"></a><img src="img/article2.jpg"></div>
+                <div class="swiper-slide"><a href="#"></a><img src="img/article3.jpg"></div>
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
     </section>
     
     <section id="section2" class="inner">
     <article>
-        <div>
+        <div class="inner">
             <h2>이 모든 혜택들이<br>
             <strong>모두 SKT혜택</strong>이라는 사실</h2>
             <p>"오늘도 당신의 즐거운 하루가 되길 응원합니다!"</p>
         </div>
     </article>
+
     <div id="back"></div>
-    <!-- <img src="img/circle.png" class="circle"> -->
     <div id="s2_img">
         <img src="img/a2_i1.jpg">
         <img src="img/a2_i2.jpg">
         <!-- <img src="img/a2_i3.jpg"> -->
-    </div>
+    </div> 
     </section>
 
     <section id="section3">
@@ -167,6 +186,32 @@
     </div>
     </footer>
 
-    
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+          
+            // If we need pagination
+            pagination: {
+              el: '.swiper-pagination',
+            },
+          
+            // Navigation arrows 
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            }, 
+          
+            // And if we need scrollbar
+            scrollbar: {
+              el: '.swiper-scrollbar',
+            },
+        
+            autoplay: {
+            delay: 3000,
+          },
+          })
+        </script>
 </body>
 </html>
