@@ -1,0 +1,132 @@
+body, h1, h2, h3, h4, h5, h6, ol, ul, li, ,div, header, section, footer {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    /* margin: 0 !important; */
+    margin-left:0;
+    margin-bottom: 0;
+    margin-right:0;
+} 
+.inner {
+    /* border: 1px solid red; */
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+header {
+    /* border: 3px solid blue; */
+    /* height: 60px; */
+    z-index: 1;
+}
+.inner {
+    /* border: 1px solid red; */
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+.blind {
+    display: none;
+}
+nav img {
+    /* border: 1px solid green; */
+    float:left;
+}
+#nav {
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    margin-left: 200px;
+    float: left;
+    margin-bottom: 20px;
+}
+#nav a {
+    padding-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: #e70034 !important;
+}
+#nav2 {
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    float: right;
+    /* margin-bottom: 20px; */
+}
+#nav2 a {
+    padding-left: 10px;
+    color: #e70034;
+}
+#nav2 .a {
+    color: black;
+}
+header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+footer {
+    /* margin-top: 50px; */
+    position: relative;
+    background-color: #f2f2f2;
+    height: 220px;
+    box-sizing: border-box;
+    margin: 0;
+}
+footer div {
+    /* border: 1px solid pink; */
+}
+#txt1 p {
+    /* border: 1px solid yellow; */
+    float: left;
+    margin-right: 20px;
+    left: 0;
+}
+.baro {
+    border: 1px solid black;
+    display: inline-block;
+    float: right;
+    padding: 7px 100px 5px 15px;
+    margin-top: 10px;
+}
+#txt1 {
+    content:"";
+    display: block;
+    clear: both;
+}
+#txt2 {
+    float: left;
+}
+#img3 {
+    position: absolute;
+    top: 60px;
+    right: 72px;
+    display: block;
+    float: right;
+    /* margin-right: 200px;
+    padding-right: 200px; */
+    /* width: 200px; */
+}
+#img3 img{
+    float: left;
+    /* border: 1px solid blue; */
+    margin-right: 0px;
+    /* padding-left: 10px; */
+    /* position: absolute; */
+    right: 0px;
+    /* display: block; */
+    /* width: 200px; */
+}
+footer #txt3 {
+    position: absolute;
+    margin-top: 150px;
+}
+footer #txt3 img{
+    float: left;
+}
+footer address {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 839px;
+    font-weight: bold;
+}

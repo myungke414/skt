@@ -1,1 +1,0 @@
-jsonp_call({"tpdenyAD":null})
